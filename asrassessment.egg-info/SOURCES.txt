@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+asrassessment.egg-info/PKG-INFO
+asrassessment.egg-info/SOURCES.txt
+asrassessment.egg-info/dependency_links.txt
+asrassessment.egg-info/requires.txt
+asrassessment.egg-info/top_level.txt
+utils/__init__.py
+utils/data_input.py
+utils/generalfunc.py
+utils/noise_sidefunc.py
+utils/phone_error_rate.py
+utils/standardizer.py
+utils/timit_load.py

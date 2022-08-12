@@ -1,0 +1,13 @@
+glob
+tqdm
+librosa
+scipy.io.wavfile
+numpy
+pandas
+sklearn
+pydub
+soundfile
+subprocess
+copy
+difflib
+eng_to_ipa
