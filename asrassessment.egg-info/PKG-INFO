@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: asrassessment
-Version: 0.0.1
+Version: 0.0.2
 Summary: Provides Phoneme Error Rate & Visualisation Assessment
 Home-page: UNKNOWN
 Author: Jonathan Lim
@@ -32,13 +32,6 @@ Description: Author: Jonathan Lim Wei Siang
         TIMIT file: TIMIT is a corpus of phonemically and lexically transcribed speech of American English speakers of different sexes and dialects
         link: https://en.wikipedia.org/wiki/TIMIT
         
-        
-        Change Log
-        ============
-        
-        0.0.1 (12/08/2022)
-        -------------------
-        - First Release
 Keywords: ASR
 Platform: UNKNOWN
 Classifier: Development Status :: 5 - Production/Stable

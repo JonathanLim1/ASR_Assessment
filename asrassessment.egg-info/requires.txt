@@ -6,7 +6,7 @@ numpy
 pandas
 sklearn
 pydub
-soundfile
+s5oundfile
 subprocess
 copy
 difflib
