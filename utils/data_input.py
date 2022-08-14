@@ -1,29 +1,29 @@
 
-#Use case for ASR model output Text. Text -> Phoneme -> Phoneme comparison 
-import eng_to_ipa as p
+# #Use case for ASR model output Text. Text -> Phoneme -> Phoneme comparison 
+# import eng_to_ipa as p
 
-def split(sentence):
-  return [letter for letter in sentence]
+# def split(sentence):
+#   return [letter for letter in sentence]
 
-def remove_space(sentence_lst):
-  delete_empty = [ele for ele in sentence_lst if ele.strip()]
-  return delete_empty
+# def remove_space(sentence_lst):
+#   delete_empty = [ele for ele in sentence_lst if ele.strip()]
+#   return delete_empty
 
-def remove_other(sentence_lst):
-  removed = [x.strip('ˈ') for x in sentence_lst] #remove "ˈ",but remains ""
-  removed = remove_space(removed) #remove ""
-  return removed
+# def remove_other(sentence_lst):
+#   removed = [x.strip('ˈ') for x in sentence_lst] #remove "ˈ",but remains ""
+#   removed = remove_space(removed) #remove ""
+#   return removed
 
-def txt_cleaning(sentence_list):
-  sentence_list = remove_space(sentence_list) #remove space " "
-  sentence_list = remove_other(sentence_list) #remove ""
-  joined = '/'.join(sentence_list)
-  return joined
+# def txt_cleaning(sentence_list):
+#   sentence_list = remove_space(sentence_list) #remove space " "
+#   sentence_list = remove_other(sentence_list) #remove ""
+#   joined = '/'.join(sentence_list)
+#   return joined
 
-#final function
-def txt_to_phonetics(sentence):
-  txt_converted_sentence = p.convert(sentence)
-  return txt_cleaning(split(txt_converted_sentence))
+# #final function
+# def txt_to_phonetics(sentence):
+#   txt_converted_sentence = p.convert(sentence)
+#   return txt_cleaning(split(txt_converted_sentence))
 
 
 ## CONVERTING NIST SPHERE .WAV file to 'useable' file
