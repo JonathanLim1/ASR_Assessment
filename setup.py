@@ -10,7 +10,7 @@ classifiers = [
 
 setup(
     name = 'asrassessment',
-    version = '0.0.8',
+    version = '0.0.9',
     description = 'Provides Phoneme Error Rate & Visualisation Assessment',
     long_description = open('README.md').read(),
     url='',
