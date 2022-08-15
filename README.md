@@ -1,4 +1,5 @@
 Author: Jonathan Lim Wei Siang 
+
 Email: Jonathanlimws@gmail.com 
 
 # Automatic Speech Recognition (ASR) Assessment
@@ -13,6 +14,7 @@ This Python package allows you to assess the phonetic error rate and visualise t
 
 ## Installation
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install asrassessment.
+
 For the latest version check [the PyPI page](https://pypi.org/project/asrassessment/).
 
 ```bash
@@ -92,6 +94,7 @@ print(error_df)
 
 ## Ploting boxplot for phoneme accuracy of ASR model across selected TIMIT files
 Having defined the ASR model prior to this, simply put the function name as a variable. 
+
 Then choose which range of DR files to use within TIMIT and "TRAIN"/"TEST". [Take note of point 3 in Installation](#installation)
 
 ```python
@@ -104,6 +107,7 @@ asrtest.full_phn_boxplot(asr_model=allosaurus_model,file_set="TRAIN", DR=[0,1])
 ## Ploting stacked boxplot for phoneme accuracy of ASR model across varying added noise
 
 Note that adding noise function here requires a 'noisyspeech.cfg' file. 
+
 Noise file should be in wav file and you can find such an example download [here](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi4rsb6r8n5AhXhBbcAHeqQCn8QFnoECAUQAQ&url=https%3A%2F%2Fwww.audiocheck.net%2Ftesttones_whitenoise.php&usg=AOvVaw2Qg1PzG1unVXJIfPaPcc3a)
 
 ASR_Model
@@ -218,9 +222,12 @@ Sources:
 
 
 ## TIMIT Acoustic-Phonetic Continuous Speech Corpus
-TIMIT file: [TIMIT](https://en.wikipedia.org/wiki/TIMIT) is a corpus of phonemically and lexically transcribed speech of American English speakers of different sexes and dialects \n
-Samples of the corpus can be found [here](https://catalog.ldc.upenn.edu/LDC93s1) \n 
-You can downlaod the entire corpus [here](https://academictorrents.com/details/34e2b78745138186976cbc27939b1b34d18bd5b3). \n
+TIMIT file: [TIMIT](https://en.wikipedia.org/wiki/TIMIT) is a corpus of phonemically and lexically transcribed speech of American English speakers of different sexes and dialects
+
+Samples of the corpus can be found [here](https://catalog.ldc.upenn.edu/LDC93s1) 
+
+You can downlaod the entire corpus [here](https://academictorrents.com/details/34e2b78745138186976cbc27939b1b34d18bd5b3).
+
 Watch how to download the torrent [here](https://academictorrents.com/docs/downloading.html)
 
 # Package Requirements
