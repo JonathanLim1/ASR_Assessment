@@ -37,7 +37,7 @@ pip install asrassessment
 
 # Usage of package
 ## Calculating Phoneme Error Rate(%)
-'''python
+```python
 
 #imports
 import os 
@@ -86,22 +86,25 @@ output, error_df = error_rate(timit_phn_conv,asr_phn_conv)
 #Final dataframe showing phoneme comparison & type of error
 print(output)
 print(error_df)
-'''
+```
 
 ## Ploting boxplot for phoneme accuracy of ASR model across selected TIMIT files
 Having defined the ASR model prior to this, simply put the function name as a variable. 
 Then choose which range of DR files to use within TIMIT and "TRAIN"/"TEST". [Take note of point 3 in Installation](#installation)
 
-'''python
+```python
 from asrassessment import main as asrtest
 
 #plot 
 asrtest.full_phn_boxplot(asr_model=allosaurus_model,file_set="TRAIN", DR=[0,1])
-'''
+```
 
 ## Ploting stacked boxplot for phoneme accuracy of ASR model across varying added noise
 
-'''python
+Note that adding noise function here requires a 'noisyspeech.cfg' file. 
+Noise file should be in wav file and you can find such an example download [here](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi4rsb6r8n5AhXhBbcAHeqQCn8QFnoECAUQAQ&url=https%3A%2F%2Fwww.audiocheck.net%2Ftesttones_whitenoise.php&usg=AOvVaw2Qg1PzG1unVXJIfPaPcc3a)
+
+```python
 #Load ASR model
 Here we use the [allosaurus model](#allosaurus-model)
 
@@ -122,11 +125,11 @@ asrtest.full_noise_stackedplot(audio_dict=TIMIT_dict['train'],
                                louder_volumes=[],
                                softer_volumes=[0,5,10,15,20,25,30])
 
-'''
+```
 
 ## Ploting time/frequency plot of ASR model to identify phoneme error at given frame
 
-'''python
+```python
 
 #import 
 from asrassessment import main as asrtest
@@ -142,12 +145,12 @@ asrtest.phoneme_wavchart(timit_phndir = phn_file_dir,
                          vlinecolor='grey',
                          print_df=False)
 
-'''
+```
 
 
 ### Allosaurus Model 
 
-'''python
+```python
 %pip install allosaurus
 from allosaurus.app import read_recognizer
 
@@ -175,11 +178,13 @@ def allosaurus_model(file_directory,fr=16000,dataframe=False):
     else:
         allosaurus_phn = col_to_string(finaldf,colname='phoneme')
     return allosaurus_phn
-'''
+```
 
 ### Speech Recognition Model (Google)
-'''python
+```bash
 !pip install SpeechRecognition 
+```
+```python
 import speech_recognition as sr
 
 def speech_recog(timit_wav):
@@ -188,7 +193,7 @@ def speech_recog(timit_wav):
     audio = r.record(source) 
   
   return r.recognize_google(audio)
-'''
+```
 
 # Further Description  
 ## Method to get phoneme_error_rate 
