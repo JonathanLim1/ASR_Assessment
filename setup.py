@@ -28,5 +28,5 @@ setup(
                         'pandas >= 1.4.3',
                         'sklearn >= 0.0',
                         'pydub >= 0.25.1',
-                        'soundfile >= 0.10.3.post1']
+                        'soundfile == 0.10.3.post1']
 )
