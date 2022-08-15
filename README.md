@@ -37,6 +37,8 @@ pip install asrassessment
 
 # Usage of package
 ## Calculating Phoneme Error Rate(%)
+
+ASR Model: Here we use [allosuarus](https://github.com/xinjli/allosaurus) which is defined [below](#allosaurus-model).
 ```python
 
 #imports
@@ -53,7 +55,7 @@ TIMIT_dict = TIMIT_file(timit_dir)
 phn_file_dir = TIMIT_dict['train']['dr1']['fecd0']['phn'][0]
 
 #Load ASR Model
-Here we use [allosuarus](https://github.com/xinjli/allosaurus) which is defined [below](#allosaurus-model).
+...
 
 #Calculate Phoneneme Error Rate btw. 2 strings
 
@@ -104,12 +106,18 @@ asrtest.full_phn_boxplot(asr_model=allosaurus_model,file_set="TRAIN", DR=[0,1])
 Note that adding noise function here requires a 'noisyspeech.cfg' file. 
 Noise file should be in wav file and you can find such an example download [here](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi4rsb6r8n5AhXhBbcAHeqQCn8QFnoECAUQAQ&url=https%3A%2F%2Fwww.audiocheck.net%2Ftesttones_whitenoise.php&usg=AOvVaw2Qg1PzG1unVXJIfPaPcc3a)
 
-```python
-#Load ASR model
+ASR_Model
 Here we use the [allosaurus model](#allosaurus-model)
 
-#Load Speech to Text Model 
+Speech-to-text Model
 Here we use the [google speech-to-text](#speech-recognition-model-google)
+
+```python
+#Load ASR model
+...
+
+#Load Speech to Text Model 
+...
 
 #import 
 from asrassessment import main as asrtest
