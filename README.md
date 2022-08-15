@@ -218,9 +218,10 @@ Sources:
 
 
 ## TIMIT Acoustic-Phonetic Continuous Speech Corpus
-TIMIT file: [TIMIT](https://en.wikipedia.org/wiki/TIMIT) is a corpus of phonemically and lexically transcribed speech of American English speakers of different sexes and dialects
-Samples of the corpus can be found [here](https://catalog.ldc.upenn.edu/LDC93s1)
-You can downlaod the entire corpus [here](https://academictorrents.com/details/34e2b78745138186976cbc27939b1b34d18bd5b3). Watch how to download the torrent [here](https://academictorrents.com/docs/downloading.html)
+TIMIT file: [TIMIT](https://en.wikipedia.org/wiki/TIMIT) is a corpus of phonemically and lexically transcribed speech of American English speakers of different sexes and dialects \n
+Samples of the corpus can be found [here](https://catalog.ldc.upenn.edu/LDC93s1) \n 
+You can downlaod the entire corpus [here](https://academictorrents.com/details/34e2b78745138186976cbc27939b1b34d18bd5b3). \n
+Watch how to download the torrent [here](https://academictorrents.com/docs/downloading.html)
 
 # Package Requirements
 Python version required: 3.9
