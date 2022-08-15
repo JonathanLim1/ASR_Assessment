@@ -10,7 +10,7 @@ classifiers = [
 
 setup(
     name = 'asrassessment',
-    version = '0.0.15',
+    version = '0.1.9',
     description = 'Provides Phoneme Error Rate & Visualisation Assessment',
     long_description = open('README.md').read(),
     url='',
@@ -20,13 +20,15 @@ setup(
     classifiers = classifiers,
     keywords = 'ASR',
     packages = find_packages(),
-    install_requires = ['glob2 >= 0.7',
-                        'tqdm >= 4.64.0',
-                        'librosa >= 0.9.2',
-                        'scipy >= 1.9.0',
-                        'numpy >= 1.23.1',
-                        'pandas >= 1.4.3',
-                        'sklearn >= 0.0',
-                        'pydub >= 0.25.1',
-                        'soundfile == 0.10.3.post1']
+    install_requires = ['glob2>=0.5,<0.7',
+                        'tqdm>=4.64.0',
+                        'librosa>=0.9.2',
+                        'scipy>=1.9.0',
+                        'numpy>=1.23.1',
+                        'pandas>=1.4.3',
+                        'sklearn>=0.0',
+                        'pydub>=0.25.1',
+                        'soundfile>=0.10.2',
+                        'plotly>=5.8.0',
+                        'matplotlib']
 )
