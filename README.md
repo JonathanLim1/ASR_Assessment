@@ -103,6 +103,7 @@ from asrassessment import main as asrtest
 #plot 
 asrtest.full_phn_boxplot(asr_model=allosaurus_model,file_set="TRAIN", DR=[0,1])
 ```
+![boxplot](https://github.com/JonathanLim1/ASR_Assessment/blob/master/images/boxplot.png?raw=true)
 
 ## Ploting stacked boxplot for phoneme accuracy of ASR model across varying added noise
 
@@ -138,6 +139,7 @@ asrtest.full_noise_stackedplot(audio_dict=TIMIT_dict['train'],
                                softer_volumes=[0,5,10,15,20,25,30])
 
 ```
+![stacked_boxplot](https://github.com/JonathanLim1/ASR_Assessment/blob/master/images/stacked_boxplot.png?raw=true)
 
 ## Ploting time/frequency plot of ASR model to identify phoneme error at given frame
 
@@ -158,6 +160,7 @@ asrtest.phoneme_wavchart(timit_phndir = phn_file_dir,
                          print_df=False)
 
 ```
+![freq_phn](https://github.com/JonathanLim1/ASR_Assessment/blob/master/images/phn_freq.png?raw=true)
 
 
 ### Allosaurus Model 
