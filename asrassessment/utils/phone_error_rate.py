@@ -203,7 +203,6 @@ def compare_phonemes_perc(TIMIT_dict,asr_dict,file_set = "TRAIN",DR = [0,None]):
   ###                        file_set = "TEST" or "TRAIN"
   ### <Output>:              Returns Dictionary containing phoneme as key and list of % correctly predicted phonemes as value.
 
-
   ##compare asr vs timit phonemes 
   phn_counter_dict = {
               # "Vowels (Monophthongs)"

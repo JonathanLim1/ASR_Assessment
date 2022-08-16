@@ -37,6 +37,36 @@ pip install asrassessment
 2. Stacked boxplot of accuracy rate across varying added noise 
 3. Time/frequency Plot any given TIMIT audio showing the timing/phoneme which was incorrected predicted (substitution and deletion only)
 
+### Package Directory
+
+Directory to find some key functions.
+
+- **Main.py**
+  Functions:
+  - phn_boxplot
+  - noise_stacked_boxplot
+  - full_phn_boxplot
+  - full_noise_stackedplot
+  - phoneme_wavchart
+
+- **utils.py**
+  - **data_input.py**
+    Function:
+    - convert_wav
+  - **standardizer.py**
+    Dictionaries:
+    - comapping
+    - IPA_to_TIMIT_mapping
+    - TIMIT_to_IPA_mapping
+    Functions:
+    - IPA_to_TIMIT
+    - TIMIT_to_IPA
+    - read_phn
+  - **phone_error_rate.py**
+    Function:
+    - error_rate
+
+
 # Usage of package
 ## Calculating Phoneme Error Rate(%)
 

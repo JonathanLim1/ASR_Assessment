@@ -72,9 +72,13 @@ def noise_stacked_boxplot(error_rate_df,
 
 ### SIMPLIFIED FUNCTIONS (MAIN FUNCTIONS)
 #simplified function to plot phn boxplot 
-def full_phn_boxplot(asr_model,file_set="TRAIN",DR=[0,None],styling_outliers = False):
-    asr_dict = load_asr_dict(asr_model=asr_model,DR=DR,file_set=file_set)
-    phn_counter_dict = compare_phonemes_perc(asr_dict,DR=DR,file_set=file_set)
+def full_phn_boxplot(asr_model,
+                     TIMIT_dict,
+                     file_set="TRAIN",
+                     DR=[0,None],
+                     styling_outliers = False):
+    asr_dict = load_asr_dict(TIMIT_dict=TIMIT_dict,asr_model=asr_model,DR=DR,file_set=file_set)
+    phn_counter_dict = compare_phonemes_perc(TIMIT_dict=TIMIT_dict,asr_dict=asr_dict,DR=DR,file_set=file_set)
 
     return phn_boxplot(phn_counter_dict,styling_outliers=styling_outliers)
 

@@ -1,3 +1,15 @@
+# History of version changes 
+
+### v 0.1.12
+- Changes to phone_error_rate load_asr_dict function (missing variable in compare_phonemes_perc not in full_phn_boxplot)
+- Edited README.md
+
+### v 0.1.11
+- Changes to phone_error_rate load_asr_dict function 
+
+### v 0.1.10
+- Changes to phone_error_rate load_asr_dict function (missing variable in load_asr_dict not in full_phn_boxplot)
+
 ### v 0.1.9
 - Error in timit directory for TIMIT_File function  in timit_load.py
 - Updated README.md to show:
