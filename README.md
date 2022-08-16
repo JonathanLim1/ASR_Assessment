@@ -50,20 +50,13 @@ Directory to find some key functions.
   - phoneme_wavchart
 
 - **utils.py**
-  - **data_input.py**
-    Function:
+  - **data_input.py** 
     - convert_wav
   - **standardizer.py**
-    Dictionaries:
-    - comapping
-    - IPA_to_TIMIT_mapping
-    - TIMIT_to_IPA_mapping
-    Functions:
     - IPA_to_TIMIT
     - TIMIT_to_IPA
     - read_phn
   - **phone_error_rate.py**
-    Function:
     - error_rate
 
 
