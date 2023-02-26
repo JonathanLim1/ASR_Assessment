@@ -55,7 +55,8 @@ def phn_boxplot(phn_counter_dict, styling_outliers = 'suspectedoutliers'):
   fig.update_yaxes(
           title_text = "Accuracy (%)",
           title_standoff = 25)
-
+  
+  fig.write_image("my_plot.eps", format="eps")
   fig.show()
 
 def noise_stacked_boxplot(error_rate_df,

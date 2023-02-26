@@ -1,7 +1,9 @@
 # History of version changes 
 
-### v 0.1.16
+### v 0.1.17
 -  updated timit_load function to include timit files with capital letters named files
+- change to download plot as eps file
+
 ### v 0.1.12
 - Changes to phone_error_rate load_asr_dict function (missing variable in compare_phonemes_perc not in full_phn_boxplot)
 - Edited README.md
