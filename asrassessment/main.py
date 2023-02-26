@@ -60,6 +60,7 @@ def phn_boxplot(phn_counter_dict, styling_outliers = 'suspectedoutliers'):
   fig.show()
 
 def noise_stacked_boxplot(error_rate_df,
+                          dimension,
                           x_axis = "Error Rate (%)",
                           y_axis = "Volume",
                           type_error = "Type of Error"):
@@ -69,6 +70,11 @@ def noise_stacked_boxplot(error_rate_df,
   ### <Output>              : Stacked boxplot
 
   fig = px.bar(error_rate_df, x = x_axis, y = y_axis, color = type_error, barmode = 'stack')
+  fig.update_layout(
+    margin=dict(l=dimension[0], r=dimension[1], t=dimension[2], b=dimension[3]),
+    xaxis=dict(tickfont=dict(size=14)),
+    yaxis=dict(tickfont=dict(size=14)),
+    width=500)
   fig.show()
 
 ### SIMPLIFIED FUNCTIONS (MAIN FUNCTIONS)
@@ -87,6 +93,7 @@ def full_noise_stackedplot(audio_dict,
                             noise_wav,
                             asr_phn_model,
                             asr_txt_model,
+                            dimension,
                             cfg_filedir= 'noisyspeech.cfg',
                             DR = [0,None],
                             SPK = [0,None],
@@ -103,7 +110,7 @@ def full_noise_stackedplot(audio_dict,
                                                 SPK = SPK,
                                                 louder_volumes = louder_volumes,
                                                 softer_volumes = softer_volumes)
-    return noise_stacked_boxplot(error_rate_df)
+    return noise_stacked_boxplot(dimension, error_rate_df)
 
 #Function to plot wav graph showing phoneme per time and error occur at which frames
 def phoneme_wavchart(timit_phndir, timit_wavdir,asr_model,vlinecolor='grey',print_df=False):
