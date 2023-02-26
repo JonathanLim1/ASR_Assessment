@@ -10,7 +10,7 @@ classifiers = [
 
 setup(
     name = 'asrassessment',
-    version = '0.1.12',
+    version = '0.1.16',
     description = 'Provides Phoneme Error Rate & Visualisation Assessment',
     long_description = "Click on github to find out more!",
     url='https://github.com/JonathanLim1/ASR_Assessment',

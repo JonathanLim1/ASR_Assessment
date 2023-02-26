@@ -5,10 +5,14 @@
 
 from glob import glob
 
-def TIMIT_file(file_directory):
-
-    train_test_directory = glob(f"{file_directory}/t*")#use own file directory
-    lst_filetypes =['phn','txt','wav','wrd']
+def TIMIT_file(file_directory,capital=False):
+    
+    if capital: 
+        train_test_directory = glob(f"{file_directory}/T*")#use own file directory
+        lst_filetypes =['PHN','TXT','WAV','WRD']
+    else:
+        train_test_directory = glob(f"{file_directory}/t*")#use own file directory
+        lst_filetypes =['phn','txt','wav','wrd']
 
     #create TRAIN/TEST key
     TIMIT_dict = {i.split("/")[-1]:{} for i in train_test_directory} 
